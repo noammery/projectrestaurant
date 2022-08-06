@@ -67,3 +67,12 @@ a:hover {
   display: flex;
   justify-content: space-evenly;
 }
+.special {
+  position: relative;
+}
+.nog {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  background-color: yellow;
+}
