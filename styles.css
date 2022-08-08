@@ -2,34 +2,58 @@
   font-style: italic;
 }
 #body1 {
-  background-image: url(https://cdn.pixabay.com/photo/2017/06/26/12/49/red-wine-2443699_1280.jpg);
+  background-image: url(https://cdn.pixabay.com/photo/2017/02/13/22/27/milk-splash-2064088_1280.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
+  position: relative;
+  z-index: 2;
 }
 #toolbar {
   text-align: center;
   display: flex;
-    justify-content: space-evenly;
+  justify-content: center;
+  width: 69vw;
+  float: right;
+  padding-right: 12vw;
+  
+}
+#tb-btn {
+   background-color: lightskyblue;
+   margin: 10px;
+}
+#firstpagedad {
+  height: 100vh;
 }
 #firstpage {
   text-align: center;
   background: rgba(0, 0, 0, 0.6);
   color: white;
-height: 100vh;
-width: 30vw;
+  height: 100vh;
+  width: 30vw;
+  transition:ease-in-out;
+  transition-duration: 700ms;
+}
+#firstpage:hover {
+  color: aqua;
+}
+a {
+  transition:ease-in-out;
+  transition-duration: 700ms;
 }
 a:link {
-  color: brown;
+  color: white;
 }
 a:visited {
-  color: brown;
+  color: white;
 }
 a:hover {
-  color: lightskyblue;
+  color: blue;
 }
 #body2 {
   height: 100vh;
-  background: rgba(0, 0, 0, 0.6);
+  background-image: url(https://cdn.pixabay.com/photo/2019/04/10/11/56/watercolor-4116932_1280.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
   display: flex;
 }
 #menuimg {
@@ -39,18 +63,26 @@ a:hover {
   flex-wrap: wrap;
   justify-content: space-around;
 }
+#menutext {
+  transition:ease-in-out;
+  transition-duration: 700ms;
+}
+#menutext:hover {
+  color: blue;
+}
 .img {
   width: 200px;
   height: 200px;
 }
 #body3 {
-  background: rgba(0, 0, 0, 0.6);
+  background-color: azure;
+  display: flex;
   height: 100vh;
 }
 #faq {
   text-align: center;
   color: black;
-  background-color: beige;
+  background-color: white;
   width: 70%;
   margin-left: 15%;
   height: 100vh;
@@ -58,7 +90,7 @@ a:hover {
 #contact {
   text-align: center;
   color: black;
-  background-color: beige;
+  background-color: white;
   width: 70%;
   margin-left: 15%;
   height: 100vh;
@@ -74,5 +106,47 @@ a:hover {
   position: absolute;
   bottom: 8px;
   right: 16px;
+  background-color: darkturquoise;
+}
+#goup {
+  position: fixed;
+  background-color: blue;
+  color: black;
+  z-index: 1; 
+}
+#sendbtn {
+  padding: 1rem;
+  background-color: blue;
+  color: aliceblue;
+  transition: ease-in-out;
+  transition-duration: 500ms;
+}
+#sendbtn:hover {
+  color: black;
   background-color: yellow;
+}
+@media only screen and (max-width:768px) {
+  #body1 {
+    background-size: cover;
+  }
+  #firstpagedad {
+    height: 107vh;
+  }
+  #body2 {
+    height: 220vh;
+    width: 100vw;
+    background-size: cover;
+  }
+  #body3 {
+    height: 150vh;
+  }
+  #faq {
+    height: 150vh;
+  }
+  #contact {
+    height: 150vh;
+  }
+  #firstpage {
+    height: 107vh;
+  }
 }
