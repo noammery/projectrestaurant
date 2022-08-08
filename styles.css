@@ -112,11 +112,24 @@ background-color: black;
 .special {
   position: relative;
 }
-.nog {
+#nog {
+  z-index: 2;
+  position: relative;
+  transition:ease-in-out;
+  transition-duration: 300ms;
+}
+#nog-sign {
+  width: 30px;
+  height: 30px;
   position: absolute;
-  bottom: 8px;
-  right: 16px;
-  background-color: darkturquoise;
+  right: 40%;
+  top: 40%;
+  z-index: 1;
+}
+#nog:hover {
+  z-index: 1;
+  height: 210px;
+  width: 210px;
 }
 #goup {
   position: fixed;
@@ -132,7 +145,7 @@ background-color: black;
 }
 #sendbtn:hover {
   color: black;
-  background-color: yellow;
+  background-color: aqua;
 }
 @media only screen and (max-width:768px) {
   #body1 {
@@ -158,4 +171,14 @@ background-color: black;
   #firstpage {
     height: 107vh;
   }
+}
+#inputs {
+  background-color: rgba(70, 70, 125, 0.3);
+  border-color: black;
+  border-style: dotted;
+  transition: ease-in-out;
+  transition-duration: 500ms;
+}
+#inputs:hover {
+  background-color: rgba(9, 32, 237, 0.6);
 }
