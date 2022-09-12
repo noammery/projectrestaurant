@@ -16,11 +16,10 @@
   width: 69vw;
   float: right;
   padding-right: 12vw;
-  
 }
 #tb-btn {
-   background-color: lightskyblue;
-   margin: 10px;
+  background-color: lightskyblue;
+  margin: 10px;
 }
 #firstpagedad {
   height: 100vh;
@@ -31,14 +30,14 @@
   color: white;
   height: 100vh;
   width: 30vw;
-  transition:ease-in-out;
+  transition: ease-in-out;
   transition-duration: 700ms;
 }
 #firstpage:hover {
   color: aqua;
 }
 a {
-  transition:ease-in-out;
+  transition: ease-in-out;
   transition-duration: 700ms;
 }
 a:link {
@@ -66,7 +65,7 @@ a:hover {
   justify-content: space-around;
 }
 #menutext {
-  transition:ease-in-out;
+  transition: ease-in-out;
   transition-duration: 700ms;
 }
 #menutext:hover {
@@ -77,11 +76,11 @@ a:hover {
   height: 200px;
 }
 #body3 {
-  background: #005AA7; 
-  background: -webkit-linear-gradient(to left, #FFFDE4, #005AA7);
-  background: linear-gradient(to left, #FFFDE4, #005AA7); 
+  background: #005aa7;
+  background: -webkit-linear-gradient(to left, #fffde4, #005aa7);
+  background: linear-gradient(to left, #fffde4, #005aa7);
   display: flex;
-  height: 100vh;
+  height: fit-content;
 }
 #faq {
   text-align: center;
@@ -91,12 +90,12 @@ a:hover {
   height: 100vh;
 }
 #faq-p {
-  transition:ease-in-out;
+  transition: ease-in-out;
   transition-duration: 600ms;
 }
 #faq-p:hover {
-color: blue;
-background-color: black;
+  color: blue;
+  background-color: black;
 }
 #contact {
   text-align: center;
@@ -115,7 +114,7 @@ background-color: black;
 #nog {
   z-index: 2;
   position: relative;
-  transition:ease-in-out;
+  transition: ease-in-out;
   transition-duration: 300ms;
 }
 #nog-sign {
@@ -134,10 +133,10 @@ background-color: black;
 #goup {
   position: fixed;
   background-color: lightskyblue;
-  z-index: 1; 
+  z-index: 1;
 }
 #sendbtn {
-  padding: 1rem;
+  padding: 0.5vw;
   background-color: blue;
   color: aliceblue;
   transition: ease-in-out;
@@ -147,7 +146,7 @@ background-color: black;
   color: black;
   background-color: aqua;
 }
-@media only screen and (max-width:768px) {
+@media only screen and (max-width: 768px) {
   #body1 {
     background-size: cover;
   }
